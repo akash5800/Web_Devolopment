@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: #414141;color: aliceblue;">
+  <h2>Amazing Images</h2> 
+<div>
+    <ul id="images">
+        <li><img width="200px"id="photoshop" src="img1.png" alt="photoshop"></li>
+        <li><img width="200px"id="japan" src="img2.png" alt=""></li>
+        <li><img width="200px"id="river" src="img3.png" alt=""></li>
+        <li><img width="200px"id="owl" src="img4.png" alt=""></li>
+      </ul>    
+</div>
+</body>
+<script>
+// isse owl ki id se material leke store kar lia uspe click karne par
+   /* document.getElementById('owl').onclick=function(){
+        alert("owl clicked")
+    }*/ 
+
+
+// document.getElementById('owl').addEventListener('click',function(){
+//     alert("img4 clicked again")
+// },false//automaticaly false hi leta hai
+// )
+
+
+document.getElementById('images').addEventListener('click',function(e){
+    console.log("clicked inside the ul");},false)
+document.getElementById('owl').addEventListener('click',function(e){
+        console.log("owl clicked");
+        e.stopPropagation() // isse big event means pahle vala print nhi hoga keval yhi lega
+    },false)
+// isme owl vale me click karne par pahle small event print hoga then big print hoga(called bubbling)
+document.querySelector('#images').addEventListener('click',function(e){
+    console.log(e.target.tagName);
+    if(e.target.tagName==='IMG'){
+        console.log(e.target.id);
+        let removeIt=e.target.parentNode
+        removeIt.remove()
+// isse tap karne par remove ho jaega
+    }
+})
+</script>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chai aur code</title>
+</head>
+<body style="background-color: #212121;color: #fff;">
+    
+</body>
+<script>
+    const helo=document.createElement('div')
+    console.log(helo);
+    helo.className="main"
+    helo.id="myid"
+    helo.id=Math.round(Math.random()*10+1)
+    helo.setAttribute("title","generated tittle")
+    helo.style.backgroundColor="green"
+    helo.style.padding="12px"
+    //helo.innerText="chai aur code"
+    const addText=document.createTextNode("chai aur");
+     helo.appendChild(addText)  
+    document.body.appendChild(helo)
+</script>
+</html>

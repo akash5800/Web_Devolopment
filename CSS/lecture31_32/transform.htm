@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #rotatex:hover{
+            transform: rotatex(45deg);
+        }
+        #rotatey:hover{
+            transform: rotatey(-45deg);
+        }
+        #rotatez:hover{
+            transform: rotatez(45deg);
+        }
+        #translatex:hover{
+            transform: translatex(-100px);
+        }
+        #translatey:hover{
+            transform: translatey(-100px);
+        }
+        #translatez:hover{
+            transform:perspective(300px) translatez(-100px);
+        }
+        #scalex:hover{
+            transform: scalex(1.5);
+        }
+        #skewy:hover{
+            transform: skewy(30deg);
+        }
+        #scalez:hover{
+            transform: perspective(500px) rotatez(30deg);
+        }
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .item{
+            padding: 2rem;
+            height: 150px;
+            width: 150px;
+            background-color: red;
+            border: 2px solid black;
+        }
+        .container{
+            gap: 1rem;
+            padding: 5rem;
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="rotatex">rotatex</div>
+        <div class="item" id="rotatey">rotatey</div>
+        <div class="item" id="rotatez">rotatez</div>
+        <div class="item" id="translatex">translatex</div>
+        <div class="item" id="translatey">translatey</div>
+        <div class="item" id="translatez">translatez</div>
+        <div class="item" id="scalex">scalex</div>
+        <div class="item" id="skewy">skewy</div>
+        <div class="item" id="scalez">scalez</div>
+    </div>
+</body>
+</html>

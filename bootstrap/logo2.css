@@ -1,0 +1,7 @@
+.container{border: 5px solid blue;}
+#header{background-color: yellowgreen;}
+ul{list-style: none;}
+ul li{display: inline;
+    padding: 15px;}
+#menu{border: 2px solid black;}
+

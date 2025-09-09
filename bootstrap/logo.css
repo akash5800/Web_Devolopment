@@ -1,0 +1,10 @@
+.container{border: 5px solid rgb(192, 21, 21);}
+.col-12,.col-9,.col-3{border: 3px solid rgb(255, 128, 0);}
+#header{background-color: pink;}
+#menu{background-color: lightblue;}
+ul{list-style: none;}
+ul li{display: inline;
+      padding: 15px;
+}
+body{ background-color: gray;}
+#content{background-color:white;}

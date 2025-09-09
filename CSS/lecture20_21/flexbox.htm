@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: beige;
+            border: 5px solid black;
+            margin: 2px;
+            padding: 2px;
+            display: flex;/* box row vise arrange ho jaenge*/
+            flex-direction: row-reverse;/*box ki direction reverse ho jaegi */ 
+            flex-wrap: wrap; /*side bar se scroll karne par dibbe patle ho jaenge */
+            justify-content: center; /*equal space dekar  me align karne ke liye */ 
+            align-items: centre;
+            height: 600px;
+        }
+        .box{
+            /* height: 100px; */
+            width: 100px;
+            border: 2px solid brown;
+            padding: 2px;
+            margin: 2px;
+        }
+        #box1{
+            background-color: aqua;
+
+
+        }
+        #box2{
+            background-color: blue;
+        }
+        #box3{
+            background-color: orange;
+        }
+        #box4{
+            background-color: brown;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+    <h1><u>FLEX BOX</u></h1>
+</head>
+<body>
+    <div class="container">
+  <div class="box" id="box1"></div>
+  <div class="box" id="box2"></div>
+  <div class="box" id="box3"></div>
+  <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>

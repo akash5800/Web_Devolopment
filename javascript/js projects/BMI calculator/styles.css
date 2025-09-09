@@ -1,0 +1,41 @@
+.container{
+    width:575px;
+    height: 775px;
+    background-color: #dbddcf;
+    padding-left: 25px;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+#height,#weight{
+width: 150px;
+height: 25px;
+margin-top: 10px;
+}
+#weight-guide{
+    margin-left: 75px;
+    margin-top: 25px;
+}
+#results{
+    font-size: 35px;
+    margin-left: 90px;
+    margin-top: 20px;
+    color:red;
+}
+button{
+    width: 150px;
+    height: 35px;
+    margin-left: 90px;
+    margin-top: 15px;
+    background-color: rgba(208, 0, 255, 0.826);
+    padding: 1px 30px;
+    border-radius: 8px;
+    color: #212121;
+    text-decoration: none;
+    font-size: 20px;
+}
+h1{
+    padding-left: 15px;
+    padding-top: 25px;
+}
