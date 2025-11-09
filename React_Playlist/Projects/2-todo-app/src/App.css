@@ -1,15 +1,8 @@
-h1{
-  font-weight:700;
-  font-size:45 px;
-  margin-bottom: 20px;
-  text-decoration: underline;
-}
+ 
 input{
   width:100%;
 }
-.items-container{
-  text-align:left;
-}
+ 
 .kg-row{
   margin:10px 5px;
 }
