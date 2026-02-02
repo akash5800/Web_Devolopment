@@ -1,0 +1,9 @@
+*{
+  font-style: georgia;
+}
+body{
+  text-align: center;
+}
+h1,h3,h4{
+  text-align: start;
+}
